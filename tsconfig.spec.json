@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "types": ["jasmine"]
+  },
+  "include": ["src/app/store/**/*.spec.ts", "src/app/store/**/*.ts"]
+}
