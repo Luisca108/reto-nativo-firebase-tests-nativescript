@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "reemplaza-con-tu-proyecto-firebase",
+    "storage_bucket": "reemplaza-con-tu-proyecto-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:reemplaza",
+        "android_client_info": {
+          "package_name": "org.example.retonativotests"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "REEMPLAZA_ESTA_API_KEY_CON_TU_KEY_DE_FIREBASE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
