@@ -1,0 +1,19 @@
+<Page class="page">
+  <ActionBar title="Google Maps"></ActionBar>
+
+  <GridLayout rows="auto,*" class="screen">
+    <StackLayout row="0" class="header">
+      <Label text="Mapa con marker" class="title"></Label>
+      <Label text="La API key se configura en App_Resources Android." textWrap="true" class="subtitle"></Label>
+    </StackLayout>
+
+    <MapView
+      row="1"
+      [lat]="lat"
+      [lng]="lng"
+      [zoom]="zoom"
+      (ready)="onMapReady($event)"
+      class="map">
+    </MapView>
+  </GridLayout>
+</Page>
