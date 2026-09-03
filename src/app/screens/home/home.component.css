@@ -1,0 +1,104 @@
+.page {
+  background-color: #f6f8fa;
+  color: #18222c;
+}
+
+ActionBar {
+  background-color: #0b3954;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 15;
+}
+
+.header {
+  margin-bottom: 12;
+}
+
+.title {
+  font-size: 26;
+  font-weight: 700;
+  color: #0b3954;
+}
+
+.subtitle {
+  margin-top: 5;
+  color: #52606d;
+  font-size: 14;
+}
+
+.token-panel {
+  padding: 12;
+  border-width: 1;
+  border-color: #d6dee6;
+  border-radius: 8;
+  background-color: #ffffff;
+  margin-bottom: 12;
+}
+
+.section-title {
+  margin-bottom: 8;
+  font-size: 17;
+  font-weight: 700;
+  color: #18222c;
+}
+
+.token {
+  color: #334e68;
+  font-size: 12;
+  margin-bottom: 10;
+}
+
+.primary-button,
+.nav-button {
+  height: 44;
+  border-radius: 8;
+  background-color: #087e8b;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav-row {
+  margin-bottom: 12;
+}
+
+.nav-button {
+  width: 31%;
+  background-color: #0b3954;
+  font-size: 13;
+}
+
+.empty,
+.message-row {
+  padding: 12;
+  border-width: 1;
+  border-color: #d6dee6;
+  border-radius: 8;
+  background-color: #ffffff;
+  color: #66788a;
+}
+
+.list {
+  separator-color: transparent;
+}
+
+.message-row {
+  margin-bottom: 9;
+}
+
+.message-title {
+  font-weight: 700;
+  color: #18222c;
+}
+
+.message-body {
+  margin-top: 4;
+  color: #52606d;
+}
+
+.message-date {
+  margin-top: 6;
+  font-size: 12;
+  color: #087e8b;
+}
