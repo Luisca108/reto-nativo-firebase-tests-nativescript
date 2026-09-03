@@ -1,0 +1,55 @@
+.page {
+  background-color: #f6f8fa;
+}
+
+ActionBar {
+  background-color: #0b3954;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 16;
+}
+
+.section-title {
+  margin-bottom: 8;
+  color: #18222c;
+  font-size: 18;
+  font-weight: 700;
+}
+
+.second {
+  margin-top: 22;
+}
+
+.text-box {
+  min-height: 105;
+  padding: 10;
+  border-width: 1;
+  border-color: #bcccdc;
+  border-radius: 8;
+  background-color: #ffffff;
+  font-size: 15;
+}
+
+.sample-image {
+  height: 160;
+  margin-bottom: 12;
+}
+
+.primary-button,
+.secondary-button {
+  height: 46;
+  border-radius: 8;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.primary-button {
+  margin-top: 12;
+  background-color: #087e8b;
+}
+
+.secondary-button {
+  background-color: #0b3954;
+}
