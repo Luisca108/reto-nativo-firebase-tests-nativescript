@@ -1,0 +1,16 @@
+<Page class="page">
+  <ActionBar title="Camara"></ActionBar>
+
+  <StackLayout class="screen">
+    <Label text="Fotografia nativa" class="title"></Label>
+    <Label text="Toma una foto con el plugin camera y compartela con social-share." textWrap="true" class="subtitle"></Label>
+
+    <GridLayout class="photo-frame">
+      <Label *ngIf="!photo" text="Sin foto tomada" class="placeholder"></Label>
+      <Image *ngIf="photo" [src]="photo" stretch="aspectFill" class="photo"></Image>
+    </GridLayout>
+
+    <Button text="Tomar fotografia" (tap)="takePhoto()" class="primary-button"></Button>
+    <Button text="Compartir fotografia" (tap)="sharePhoto()" class="secondary-button"></Button>
+  </StackLayout>
+</Page>
