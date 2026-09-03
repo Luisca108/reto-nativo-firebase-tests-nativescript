@@ -1,0 +1,13 @@
+<Page class="page">
+  <ActionBar title="Social Share"></ActionBar>
+
+  <StackLayout class="screen">
+    <Label text="Compartir texto" class="section-title"></Label>
+    <TextView [(ngModel)]="textToShare" class="text-box"></TextView>
+    <Button text="Compartir texto" (tap)="shareTextContent()" class="primary-button"></Button>
+
+    <Label text="Compartir imagen" class="section-title second"></Label>
+    <Image src="res://share_sample" stretch="aspectFit" class="sample-image"></Image>
+    <Button text="Compartir imagen" (tap)="shareBundledImage()" class="secondary-button"></Button>
+  </StackLayout>
+</Page>
