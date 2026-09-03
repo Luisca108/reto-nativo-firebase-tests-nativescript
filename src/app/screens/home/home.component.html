@@ -1,0 +1,40 @@
+<Page class="page">
+  <ActionBar title="Nativo y pruebas"></ActionBar>
+
+  <GridLayout rows="auto,auto,auto,*" class="screen">
+    <StackLayout row="0" class="header">
+      <Label text="Firebase Messaging" class="title"></Label>
+      <Label text="El token se obtiene desde Firebase y sirve para enviar notificaciones desde la consola." textWrap="true" class="subtitle"></Label>
+    </StackLayout>
+
+    <StackLayout row="1" class="token-panel">
+      <Label text="Token asignado" class="section-title"></Label>
+      <Label [text]="firebaseToken" textWrap="true" class="token"></Label>
+      <Button
+        [text]="isInitializing ? 'Conectando...' : 'Obtener token Firebase'"
+        (tap)="connectFirebase()"
+        class="primary-button">
+      </Button>
+    </StackLayout>
+
+    <FlexboxLayout row="2" flexDirection="row" justifyContent="space-between" class="nav-row">
+      <Button text="Compartir" (tap)="goToShare()" class="nav-button"></Button>
+      <Button text="Camara" (tap)="goToCamera()" class="nav-button"></Button>
+      <Button text="Mapa" (tap)="goToMap()" class="nav-button"></Button>
+    </FlexboxLayout>
+
+    <StackLayout row="3" class="messages">
+      <Label text="Notificaciones entrantes" class="section-title"></Label>
+      <Label *ngIf="messages.length === 0" text="Aun no hay mensajes recibidos en primer plano." textWrap="true" class="empty"></Label>
+      <ListView *ngIf="messages.length > 0" [items]="messages" class="list">
+        <ng-template let-message="item">
+          <StackLayout class="message-row">
+            <Label [text]="message.title" class="message-title"></Label>
+            <Label [text]="message.body" textWrap="true" class="message-body"></Label>
+            <Label [text]="message.receivedAt" class="message-date"></Label>
+          </StackLayout>
+        </ng-template>
+      </ListView>
+    </StackLayout>
+  </GridLayout>
+</Page>
