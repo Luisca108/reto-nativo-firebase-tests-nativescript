@@ -1,0 +1,32 @@
+.page {
+  background-color: #f6f8fa;
+}
+
+ActionBar {
+  background-color: #0b3954;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 14;
+}
+
+.header {
+  margin-bottom: 12;
+}
+
+.title {
+  color: #18222c;
+  font-size: 23;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 5;
+  color: #52606d;
+  font-size: 14;
+}
+
+.map {
+  border-radius: 8;
+}
